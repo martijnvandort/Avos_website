@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avos Technologies — The Universal Sizing Ecosystem</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,700&family=Inter:wght@400&display=swap" rel="stylesheet">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #F4F1EE;
+      --text: #5D4B3E;
+      --footer-opacity: 0.6;
+    }
+
+    html {
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      min-height: 100vh;
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      display: flex;
+      flex-direction: column;
+      padding: 0 max(40px, 5vw);
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem 0 6rem;
+    }
+
+    .headline {
+      font-family: 'Bodoni Moda', serif;
+      font-weight: 700;
+      font-size: clamp(2.5rem, 10vw, 7.5rem);
+      line-height: 1;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+    }
+
+    .tagline {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.6em;
+      text-transform: uppercase;
+      margin-top: 2.5rem;
+      max-width: 36em;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 768px) {
+      .tagline {
+        letter-spacing: 0.35em;
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .tagline {
+        letter-spacing: 0.2em;
+      }
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 1.5rem max(40px, 5vw);
+      text-align: center;
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.3em;
+      opacity: var(--footer-opacity);
+      color: var(--text);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1 class="headline">AVOS<br>TECHNOLOGIES</h1>
+    <p class="tagline">THE UNIVERSAL SIZING ECOSYSTEM FOR THE FUTURE OF FASHION.</p>
+  </main>
+  <footer>
+    2026 | THE ARCHITECTURE OF CERTAINTY.
+  </footer>
+</body>
+</html>
